@@ -25,5 +25,8 @@ module.exports = {
     new ExtractTextPlugin("[name].css"),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
-  ]
+  ],
+  resolve: {
+    modulesDirectories: ['node_modules', 'app']
+  }
 };

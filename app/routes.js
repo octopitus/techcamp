@@ -1,12 +1,12 @@
 import React from 'react';
 import {Route, DefaultRoute} from 'react-router';
 
-import App from './components/App';
+import App from 'components/App';
 
 let routes = (
-  <Route path="/" handler={App}>
-    <DefaultRoute handler={require('./components/home')} />
-    <Route path="welcome" name="welcome" handler={require('./components/welcome')} />
+  <Route name="app" path="/" handler={App}>
+    <DefaultRoute handler={require('components/home')} />
+    <Route name="welcome" handler={require('components/welcome')} />
   </Route>
 )
 

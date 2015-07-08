@@ -1,9 +1,9 @@
 import 'babel-core/polyfill';
-import './assets/styles.css';
+import 'assets/styles.css';
 
 import Router from 'react-router';
 import React from 'react';
-import routes from './routes';
+import routes from 'routes';
 
 // Once we bootstrap the stores, we run react-router using
 // Router.HistoryLocation

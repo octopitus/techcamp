@@ -1,9 +1,14 @@
 import React from 'react';
 
-export default React.createClass({
-
+class Welcome extends React.Component {
   render() {
-    return (<h1>Welcome!</h1>);
+    return (
+      <div>
+        <h1>Welcome!</h1>
+        <p>Then you can click <em>Back</em> button</p>
+      </div>
+    );
   }
+};
 
-});
+export default Welcome;

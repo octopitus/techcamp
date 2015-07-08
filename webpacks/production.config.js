@@ -13,7 +13,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
+      {test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot', 'babel-loader']},
       {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
       {test: /\.less$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")},
       {test: /\.(woff|svg|ttf|eot)([\?]?.*)$/, loader: "file-loader?name=[name].[ext]"}
@@ -28,5 +28,8 @@ module.exports = {
     new ExtractTextPlugin("[name].css"),
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.UglifyJsPlugin(),
-  ]
+  ],
+  resolve: {
+    modulesDirectories: ['node_modules', 'app']
+  }
 };
