@@ -1,8 +1,372 @@
-* {
-  box-sizing: border-box;
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
 }
 
 body {
   margin: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  font-weight: 300;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+};
+
+/* Disable ugly boxes around images in IE10 */
+a img {
+  border: 0px;
+}
+
+*:focus {
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  -webkit-box-shadow: 0 3px 0 0 rgba(0,0,0,1);
+  box-shadow: 0 3px 0 0 rgba(0,0,0,1);
+}
+
+.primary-btn {
+  margin: 15px;
+  background-color: #A2090F; 
+  padding: 8px 12px; 
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background-color: #930809;
+}
+
+::-moz-selection {
+  background-color: #A2090F;
+  color: #fff;
+}
+
+::selection {
+  background-color: #A2090F;
+  color: #fff;
+}
+
+.navbar .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.navbar-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #A2090F!important;
+}
+
+.navbar-mobile-title {
+  display: none !important;
+}
+
+.android-logo-image {
+  height: 28px;
+  width: 140px;
+}
+
+
+.navbar {
+  position: fixed;
+  background-color: #fff;
+  overflow: visible;
+}
+
+.navbar.scrolling {
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.25);
+}
+
+.navbar .material-icons {
+  color: #767777 !important;
+}
+
+.navbar .mdl-layout__drawer-button {
+  background: transparent;
+  color: #767777;
+}
+
+.navbar .mdl-navigation__link {
+  color: #757575;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.navbar-container {
+  /* Simple hack to make the overflow happen to the left instead... */
+  direction: rtl;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+  order: 1;
+  width: 500px;
+  -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+  width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+  width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-nav {
+  /* ... and now make sure the content is actually LTR */
+  direction: ltr;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  width: 800px;
+}
+
+.android-search-box.is-focused ~ .navbar-container {
+  opacity: 0;
+  width: 100px;
+}
+
+
+.navbar-nav .mdl-navigation__link {
+  display: inline-block;
+  height: 60px;
+  line-height: 68px;
+  background-color: transparent !important;
+  border-bottom: 4px solid transparent;
+}
+
+.navbar-nav .mdl-navigation__link:hover {
+  border-bottom: 4px solid #8bc34a;
+}
+.header-section {
+  position: relative;
   height: 100vh;
+  width: auto;
+  background-color: #fff;
+  background: url('images/banner.jpg') center center no-repeat;
+  background-size: cover;
+}
+
+.header-section > .section-heading {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header-section > .section-heading > h2 {
+  font-size: 68px;
+}
+
+.header-section > .section-heading > .sub-logan {
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.header-section > .section-heading > .primary-btn {
+  margin-top: 30px;
+}
+
+#promo, #register {
+  padding-bottom: 60px;
+}
+
+#promo > .promo-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#promo > .promo-list > .list-item {
+  width: 45%;
+  margin: 0px auto;
+  display: table-row;
+}
+
+#promo > .promo-list > .list-item > .item-media {
+  display: table-cell;
+  width: 86px;
+  padding: 15px;
+  margin-right: 15px;
+}
+#promo > .promo-list > .list-item > .item-media > img {
+  max-width: 100%;
+}
+
+.promo-list p {
+  vertical-align: top;
+  display: table-cell;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+#memories {
+  position: relative;
+}
+
+#memories > .section-heading {
+  position: absolute;
+  top: 42%;
+  left: 30px; 
+  color: #fff;
+  text-align: left;
+  z-index: 999;
+  padding: 0px;
+}
+
+#memories a {
+  position: relative;
+  display: inline-block;
+  margin-right: -4px;
+  width: calc(100% / 5);
+}
+
+#memories a:before {
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.45;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #000;
+}
+
+#memories a:hover:before {
+  opacity: 0;
+}
+
+#memories a > img {
+  width: 100%; 
+}
+
+.sub-logan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.footer {
+  padding-top: 45px;
+  background-color: #fafafa;
+  position: relative;
+}
+
+.footer a:hover {
+  color: #8bc34a;
+}
+
+.footer .mdl-mega-footer--top-section::after {
+  border-bottom: none;
+}
+
+.footer .mdl-mega-footer--middle-section::after {
+  border-bottom: none;
+}
+
+.footer .mdl-mega-footer--bottom-section {
+  position: relative;
+}
+
+.footer .mdl-mega-footer--bottom-section a {
+  margin-right: 2em;
+}
+
+.footer .mdl-mega-footer--right-section a .material-icons {
+  position: relative;
+  top: 6px;
+}
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .navbar-container {
+    display: none;
+  }
+
+  .navbar-title {
+    color: #A2090F!important;
+  }
+
+  .navbar-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    -webkit-transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
+
+.section-heading {
+  color: #666;
+  padding: 60px 0;
+}
+
+.section-heading > h2 {
+  margin: 0px;
+}
+
+#topics {
+  padding: 60px 0;
+}
+
+#topics > .mdl-grid {
+  justify-content: space-around;
+}
+
+#topics .mdl-cell {
+  width: auto;
+}
+
+#topics .mdl-cell > .mdl-card {
+  width: 360px;
+}
+
+#topics .mdl-card__title {
+  color: #fff;
+  height: 220px;
+  background: url('http://lorempixel.com/400/200/sports/') center / cover;
+}
+
+#register {
+  padding: 60px 0;
+}
+
+#register > form > .mdl-textfield {
+  width: 420px;
+  margin: 0px 15px;
 }

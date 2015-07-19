@@ -7,8 +7,8 @@ var path = require('path');
 var del = require('del');
 var webpack = require('webpack');
 var gulpWebpack = require('gulp-webpack');
-var WebpackDevServer = require("webpack-dev-server");
 var proxy = require('proxy-middleware');
+var WebpackDevServer = require('webpack-dev-server');
 var runSequence = require('run-sequence');
 var url = require('url');
 
@@ -51,14 +51,6 @@ gulp.task('webpack:server', function() {
   });
 });
 
-// Proxy `/assets` requests to
-// served files from `webpack-dev-server`
-var webpackProxy = function () {
-  var options = url.parse('http://localhost:8090');
-  options.route = '/assets';
-  return proxy(options);
-};
-
 // Proxy `/` to the `express` server started
 var expressProxy = function () {
   var options = url.parse('http://localhost:3000');
@@ -73,7 +65,6 @@ gulp.task('sync', function () {
     server: {
       baseDir: __dirname,
       middleware: [
-        webpackProxy(),
         expressProxy()
       ]
     },

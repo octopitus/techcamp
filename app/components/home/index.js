@@ -1,12 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router';
+
+import Header from './Header';
+import Welcome from './Welcome';
+import Topic from './Topic';
+import Submit from './Submit';
+import Memory from './Memory';
+import Purchase from './Purchase';
+import Footer from './Footer';
 
 class Home extends React.Component {
+
+	constructor(props) {
+		super(props);
+	}
+
   render() {
     return (
-      <div>
-        <h1>Hello world!</h1>
-        <Link to="welcome">Click here</Link>
+    	<div className="mdl-layout__content">
+      	<a name="top"></a>
+    		<Header />
+    		<Welcome />
+    		<Topic />
+    		<Submit />
+    		<Memory />
+    		<Purchase />
+    		<Footer />
       </div>
     );
   }
