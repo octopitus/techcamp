@@ -1,5 +1,7 @@
 import 'babel-core/polyfill';
+
 import 'assets/styles.css';
+import 'font-awesome/css/font-awesome.min.css';
 
 import Router from 'react-router';
 import React from 'react';
