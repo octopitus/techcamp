@@ -11,7 +11,7 @@ export default class Header extends React.Component {
 			<div className="header-section">
 			  <div className="section-heading">
 			    <h2>Techcamp Saigon Uni 2015</h2>
-			    <div className="sub-logan">welcome to android... be yourself. do your thing. see what's going on.</div>
+			    <div className="sub-logan">Come with us to jointly share and create opportunities for yourself.</div>
 			    <a className="primary-btn mdl-button mdl-js-button mdl-js-ripple-effect">
 			      Submit topic
 			    </a>

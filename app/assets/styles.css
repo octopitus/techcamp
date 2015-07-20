@@ -163,28 +163,28 @@ input:focus, textarea:focus {
   position: relative;
   height: 100vh;
   width: auto;
-  background-color: #fff;
-  background: url('images/banner.jpg') center center no-repeat;
+  background: #fff url('images/banner.jpg') center center no-repeat;
   background-size: cover;
 }
 
 .header-section > .section-heading {
   position: absolute;
-  top: 25%;
-  left: 0;
-  color: #fff;
+  top: 40%;
+  left: calc((100% - 830px) / 2);
+  width: 830px;
+  padding: 40px 15px;
+  background-color: #fff;
+  box-sizing: border-box;
   text-align: center;
-  width: 100%;
-  height: 100%;
 }
 
 .header-section > .section-heading > h2 {
-  font-size: 68px;
+  font-size: 48px;
 }
 
 .header-section > .section-heading > .sub-logan {
   margin-top: 10px;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .header-section > .section-heading > .primary-btn {
