@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from './Header';
-import Welcome from './Welcome';
+import About from './About';
 import Topic from './Topic';
 import Submit from './Submit';
 import Memory from './Memory';
@@ -19,7 +19,7 @@ class Home extends React.Component {
     	<div className="mdl-layout__content">
       	<a name="top"></a>
     		<Header />
-    		<Welcome />
+    		<About />
     		<Topic />
     		<Submit />
     		<Memory />

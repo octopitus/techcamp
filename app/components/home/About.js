@@ -1,10 +1,15 @@
 import React from 'react';
+import scroller from 'react-scroll/lib/mixins/scroller';
 
-export default class Welcome extends React.Component {
+export default class About extends React.Component {
 
 	constructor(props) {
 		super(props);
 	}
+
+  componentDidMount() {
+    scroller.register(this.props.name, React.findDOMNode(this));
+  }
 
 	render() {
 		return (
@@ -55,3 +60,7 @@ export default class Welcome extends React.Component {
 		);
 	}
 }
+
+About.defaultProps = {name: 'about'};
+
+export default About;

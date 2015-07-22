@@ -68,9 +68,13 @@ a img {
 }
 
 .navbar-title {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #A2090F!important;
+  font-size: 0px;
+  line-height: 0px;
+  background: url('images/logo.jpg') no-repeat;
+  background-position: 50% 75%;
+  background-size: 125% 125%;
+  height: 64px;
+  width: 188px;
 }
 
 .navbar-mobile-title {
