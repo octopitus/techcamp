@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import NavLink from './NavLink';
 
 export default class Navbar extends React.Component {
 
 	constructor(props) {
 		super(props);
+		this.state = { active: null};
+	}
+
+	handleClick(index) {
+		this.setState({active: index});
 	}
 
 	render() {
@@ -17,9 +22,11 @@ export default class Navbar extends React.Component {
 			    <span className="navbar-title mdl-layout-title">Techcamp Saigon Uni 2015</span>
 			    <div className="navbar-spacer mdl-layout-spacer"></div>
 			    <div className="navbar-container">
-			      <nav className="android-navigation mdl-navigation">
-			        <a className="mdl-navigation__link mdl-typography--text-uppercase" href="#home">Home</a>
-			        <a className="mdl-navigation__link mdl-typography--text-uppercase" href="#submit">Submit topic</a>
+			      <nav className="navbar-nav mdl-navigation">
+			      	<NavLink to="submit" smooth={true} offset={-28} duration={500} text="Submit topic" handleClick={this.handleClick.bind(this, 'submit')} active={this.state.active} />
+			      	<NavLink to="purchase" smooth={true} offset={-28} duration={500} text="Purchase ticket" handleClick={this.handleClick.bind(this, 'purchase')} active={this.state.active} />
+			      	<NavLink to="topic" smooth={true} offset={-28} duration={500} text="Hot topics" handleClick={this.handleClick.bind(this, 'topic')} active={this.state.active} />
+			      	<NavLink to="memory" smooth={true} offset={-28} duration={500} text="Photos" handleClick={this.handleClick.bind(this, 'memory')} active={this.state.active} />
 			      </nav>
 			    </div>
 			  </div>

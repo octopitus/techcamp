@@ -1,17 +1,23 @@
 import React from 'react';
+import reactMixin from 'react-mixin';
+import scroller from 'react-scroll/lib/mixins/scroller';
 
-export default class Welcome extends React.Component {
+class Topic extends React.Component {
 
   constructor(props) {
     super(props);
+  }
+  
+  componentDidMount() {
+    scroller.register(this.props.name, React.findDOMNode(this));
   }
 
   render() {
     return (
       <div id="topics" style={{ backgroundColor : "#f3f3f3" }}>
         <div className="section-heading mdl-typography--text-center">
-          <h2>be together. not the same.</h2>
-          <div className="sub-logan">welcome to android... be yourself. do your thing. see what's going on.</div>
+          <h2>HOT TOPICS</h2>
+          <div className="sub-logan">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
         </div>
         <div className="mdl-grid">
           <div className="mdl-cell mdl-cell--4-col">
@@ -67,3 +73,7 @@ export default class Welcome extends React.Component {
     );
   }
 }
+
+Topic.defaultProps = {name: 'topic'};
+
+export default Topic;

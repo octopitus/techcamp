@@ -8,6 +8,8 @@ import Memory from './Memory';
 import Purchase from './Purchase';
 import Footer from './Footer';
 
+import { Link, Element } from 'react-scroll';
+
 class Home extends React.Component {
 
 	constructor(props) {

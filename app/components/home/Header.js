@@ -1,9 +1,15 @@
 import React from 'react';
+import reactMixin from 'react-mixin';
+import scroller from 'react-scroll/lib/mixins/scroller';
 
-export default class Header extends React.Component {
+class Header extends React.Component {
 
 	constructor(props) {
 		super(props);
+	}
+
+	componentDidMount() {
+		scroller.register(this.props.name, React.findDOMNode(this));
 	}
 
 	render() {
@@ -23,3 +29,7 @@ export default class Header extends React.Component {
 		);
 	}
 }
+
+Header.defaultProps = {name: 'header'};
+
+export default Header;
