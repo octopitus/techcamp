@@ -1,5 +1,4 @@
 import React from 'react';
-import reactMixin from 'react-mixin';
 import scroller from 'react-scroll/lib/mixins/scroller';
 
 class Submit extends React.Component {
