@@ -13,10 +13,11 @@ module.exports = {
   },
   module: {
     loaders: [
-      {test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot', 'babel-loader']},
+      {test: /\.js$/, exclude: /node_modules/, loaders: ['react-hot', 'babel-loader?experimental']},
       {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
       {test: /\.less$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")},
-      {test: /\.(woff|svg|ttf|eot)([\?]?.*)$/, loader: "file-loader?name=[name].[ext]"}
+      {test: /\.(png|jpg)$/, loader: 'url-loader?name=images/[name].[ext]&limit=8192'},
+      {test: /\.(woff|svg|ttf|eot)([\?]?.*)$/, loader: "file-loader?name=fonts/[name].[ext]"}
     ]
   },
   plugins: [
