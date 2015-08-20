@@ -5,7 +5,6 @@ import http from 'http';
 let app = express();
 
 // Externals scripts and styles
-app.use('/assets/material.min.js', express.static(path.join(__dirname, '../', 'public', 'material.min.js')));
 app.use('/assets/material.min.css', express.static(path.join(__dirname, '../', 'public', 'material.min.css')));
 
 // This is express boilerplate to make our
