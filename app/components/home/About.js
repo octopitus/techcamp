@@ -16,7 +16,6 @@ export default class About extends React.Component {
       <div id="promo">
         <div className="section-heading mdl-typography--text-center">
           <h2>OVERVIEW & OBJECTIVES</h2>
-          <div className="sub-logan">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
         </div>
         <div className="promo-list">
           <div className="list-item">

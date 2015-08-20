@@ -17,10 +17,10 @@ class Header extends React.Component {
 			  <div className="section-heading">
 			    <h2>Techcamp Saigon Uni 2015</h2>
 			    <div className="sub-logan">Come with us to jointly share and create opportunities for yourself.</div>
-			    <a className="primary-btn mdl-button mdl-js-button mdl-js-ripple-effect">
+			    <a className="primary-btn mdl-button mdl-js-button mdl-js-ripple-effect" href="https://nguyentrunghieu18061995.typeform.com/to/KgoOT3" target="_blank">
 			      Submit topic
 			    </a>
-			    <a className="primary-btn mdl-button mdl-js-button mdl-js-ripple-effect">
+			    <a className="primary-btn mdl-button mdl-js-button mdl-js-ripple-effect" href="https://ticketbox.vn/event/techcampsaigonuni-5519" target="_blank">
 			      Purchare ticket
 			    </a>
 			  </div>
