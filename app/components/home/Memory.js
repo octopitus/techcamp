@@ -18,16 +18,10 @@ class Memory extends React.Component {
           <h2>Memories from 2014</h2>
           <div className="sub-logan">Check out the best moments from 2014 in photos.</div>
         </div>
-        <a href=""><img src="http://lorempixel.com/260/320/sports/" /></a>
-        <a href=""><img src="http://lorempixel.com/260/320/sports/" /></a>
-        <a href=""><img src="http://lorempixel.com/260/320/sports/" /></a>
-        <a href=""><img src="http://lorempixel.com/260/320/sports/" /></a>
-        <a href=""><img src="http://lorempixel.com/260/320/sports/" /></a>
-        <a href=""><img src="http://lorempixel.com/260/320/sports/" /></a>
-        <a href=""><img src="http://lorempixel.com/260/320/sports/" /></a>
-        <a href=""><img src="http://lorempixel.com/260/320/sports/" /></a>
-        <a href=""><img src="http://lorempixel.com/260/320/sports/" /></a>
-        <a href=""><img src="http://lorempixel.com/260/320/sports/" /></a>
+        {Array.apply(null, {length: 10}).map((img, i) => {
+          let src = "/assets/" + require(`assets/images/memories/bua-tiec-cong-nghe-${i + 1}.jpg`);
+          return (<a key={i} href={`${src}`}><span style={{background: `url('${src}')`}}></span></a>);
+        })}
       </div>
 		);
 	}

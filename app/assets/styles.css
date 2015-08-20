@@ -218,6 +218,7 @@ a img {
 }
 
 #submit {
+  background-color: #fafafa;
   padding-bottom: 60px;
 }
 
@@ -279,8 +280,13 @@ a img {
   opacity: 0;
 }
 
-#memories a > img {
-  width: 100%; 
+#memories a > span {
+  width: 100%;
+  height: calc(54vh - 32px);
+  display: inherit;
+  background-size: cover!important;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .sub-logan {

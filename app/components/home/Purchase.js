@@ -21,7 +21,7 @@ class Purchase extends React.Component {
             <i className="fa fa-map-marker"></i> Block A4, Ho Chi Minh University of Technology <br/> 268 Ly Thuong Kiet Street, Ward 14, District 10, Ho Chi Minh City.
           </div>
           <br/>
-          <a className="primary-btn mdl-button mdl-js-button mdl-js-ripple-effect">Purchase</a>
+          <a className="primary-btn mdl-button mdl-js-button mdl-js-ripple-effect" href="https://ticketbox.vn/event/techcampsaigonuni-5519" target="_blank">Purchase ticket</a>
         </div>
       </div>
 		);
