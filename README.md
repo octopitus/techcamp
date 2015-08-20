@@ -12,3 +12,6 @@
 - Start server `node server`
 - Start buid system `gulp dev`
 - Open **localhost:8080**
+
+#Build
+- Run `gulp build`
