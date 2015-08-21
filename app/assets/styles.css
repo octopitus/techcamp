@@ -70,7 +70,8 @@ a img {
 .navbar-title {
   font-size: 0px;
   line-height: 0px;
-  background: url('images/logo.jpg') no-repeat;
+  background-image: url('images/logo.jpg');
+  background-repeat: no-repeat;
   background-position: 50% 75%;
   background-size: 125% 125%;
   height: 64px;
@@ -153,7 +154,9 @@ a img {
   position: relative;
   height: 100vh;
   width: auto;
-  background: #fff url('images/banner.jpg') center center no-repeat;
+  background-image: url('images/banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
