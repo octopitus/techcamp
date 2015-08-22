@@ -20,7 +20,7 @@ class Header extends React.Component {
 			    <a className="primary-btn mdl-button mdl-js-button mdl-js-ripple-effect" href="http://goo.gl/forms/3OiKZn1RC4" target="_blank">
 			      Submit topic
 			    </a>
-			    <a className="primary-btn mdl-button mdl-js-button mdl-js-ripple-effect" href="https://ticketbox.vn/event/techcampsaigonuni-5519" target="_blank">
+			    <a className="primary-btn mdl-button mdl-js-button mdl-js-ripple-effect" href="https://ticketbox.vn/event/techcamp-saigon-uni-32765" target="_blank">
 			      Purchare ticket
 			    </a>
 			  </div>
