@@ -36,6 +36,10 @@ a img {
   border: 0px;
 }
 
+h2 {
+  font-size: 36px;
+}
+
 .primary-btn {
   margin: 15px;
   background-color: #A2090F; 
@@ -150,6 +154,15 @@ a img {
 .navbar-nav .mdl-navigation__link.active {
   border-bottom: 4px solid #8bc34a;
 }
+
+/* require background-image in style */
+.content-section {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .header-section {
   position: relative;
   height: 100vh;
@@ -175,9 +188,11 @@ a img {
   font-size: 48px;
 }
 
-.header-section > .section-heading > .sub-logan {
+.header-section > .section-heading > h2 .sub-logan {
+  padding-top: 0px!important;
+  line-height: 14px;
   margin-top: 10px;
-  font-size: 24px;
+  font-size: 14px;
 }
 
 .header-section > .section-heading > .primary-btn {
@@ -294,7 +309,6 @@ a img {
 
 .sub-logan {
   font-size: 21px;
-  padding-top: 24px;
   line-height: 32px;
 }
 

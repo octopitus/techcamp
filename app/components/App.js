@@ -7,7 +7,7 @@ export default class App extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = { scrolling: false };
+		this.state = { navbar: Navbar, scrolling: false };
 	}
 
 	componentDidMount() {
@@ -23,11 +23,16 @@ export default class App extends React.Component {
 		this.setState({ scrolling });
 	}
 
+	switchNavbar(navbar) {
+		console.log('navbar', navbar);
+		this.setState({ navbar });
+	}
+
   render() {
 
     return (
   		<div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  			<Navbar scrolling={this.state.scrolling} />
+  			<this.state.navbar scrolling={this.state.scrolling} switch={(navbar) => this.switchNavbar(navbar)} />
         <RouteHandler {...this.props} />
       </div>
     );

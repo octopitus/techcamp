@@ -1,6 +1,9 @@
 import React from 'react';
 import NavLink from './NavLink';
 
+import { Link } from 'react-router';
+import LaunchNavbar from './launch/navbar';
+
 export default class Navbar extends React.Component {
 
 	constructor(props) {
@@ -23,6 +26,7 @@ export default class Navbar extends React.Component {
 			    <div className="navbar-spacer mdl-layout-spacer"></div>
 			    <div className="navbar-container">
 			      <nav className="navbar-nav mdl-navigation">
+			      	<Link to="/launch" className="mdl-navigation__link mdl-typography--text-uppercase" onClick={() => this.props.switch(LaunchNavbar)}>The Launch</Link>
 			      	<NavLink to="about" smooth={true} offset={-28} duration={500} text="About" handleClick={this.handleClick.bind(this, 'about')} active={this.state.active} />
 			      	<NavLink to="submit" smooth={true} offset={-28} duration={500} text="Submit topic" handleClick={this.handleClick.bind(this, 'submit')} active={this.state.active} />
 			      	<NavLink to="memory" smooth={true} offset={-28} duration={500} text="Photos" handleClick={this.handleClick.bind(this, 'memory')} active={this.state.active} />
