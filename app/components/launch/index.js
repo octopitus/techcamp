@@ -5,7 +5,7 @@ export default class Launch extends React.Component {
 	render() {
 
 		let sources = [1, 2, 3, 4, 5].map(i => {
-			return "/assets/" + require(`assets/images/memories/bua-tiec-cong-nghe-${i + 1}.jpg`);
+			return "/assets/" + require(`assets/images/memories/bua-tiec-cong-nghe-${i}.jpg`);
 		});
 
 		return (
