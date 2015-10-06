@@ -395,7 +395,8 @@ h2 {
 #topics .mdl-card__title {
   color: #fff;
   height: 220px;
-  background: url('http://lorempixel.com/400/200/sports/') center / cover;
+  background-size: cover;
+  background-position: top center;
 }
 
 #register {

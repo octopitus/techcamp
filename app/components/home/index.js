@@ -20,6 +20,7 @@ class Home extends React.Component {
       	<a name="top"></a>
     		<Header />
     		<About />
+        <Topic />
     		<Submit />
     		<Memory />
     		<Purchase />

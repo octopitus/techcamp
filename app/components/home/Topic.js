@@ -13,57 +13,41 @@ class Topic extends React.Component {
 
   render() {
     return (
-      <div id="topics" style={{ backgroundColor : "#f3f3f3" }}>
+      <div id="topics" style={{ backgroundColor : "#f3f3f3" }}> 
         <div className="section-heading mdl-typography--text-center">
           <h2>HOT TOPICS</h2>
-          <div className="sub-logan">Lorem Ipsum is simply dummy text of the printing and typesetting industry</div>
         </div>
         <div className="mdl-grid">
           <div className="mdl-cell mdl-cell--4-col">
             <div className="mdl-card mdl-shadow--2dp">
-              <div className="mdl-card__title">
-                <h2 className="mdl-card__title-text">Welcome</h2>
+              <div className="mdl-card__title" style={{ backgroundImage: `url(assets/${require('assets/images/techcamp_topic_1.png')})`}}>
               </div>
               <div className="mdl-card__supporting-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Mauris sagittis pellentesque lacus eleifend lacinia...
-              </div>
-              <div className="mdl-card__actions mdl-card--border">
-                <a className="mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Get Started
-                </a>
+                Công thức giữ được hải sản biển tươi được lâu hơn (gần 4 tháng) bằng công nghệ 4S.
+                <hr/>
+                Nguyễn Đức Hiếu
               </div>
             </div>
           </div>
           <div className="mdl-cell mdl-cell--4-col">
             <div className="mdl-card mdl-shadow--2dp">
-              <div className="mdl-card__title">
-                <h2 className="mdl-card__title-text">Welcome</h2>
+              <div className="mdl-card__title" style={{ backgroundImage: `url(assets/${require('assets/images/techcamp_topic_2.png')})`}}>
               </div>
               <div className="mdl-card__supporting-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Mauris sagittis pellentesque lacus eleifend lacinia...
-              </div>
-              <div className="mdl-card__actions mdl-card--border">
-                <a className="mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Get Started
-                </a>
+                Thiết bị hỗ trợ định vị vị trí của các thiết bị và vật dụng cá nhân khi được gắn kèm.
+                <hr/>
+                Võ Tấn Hùng
               </div>
             </div>
           </div>
           <div className="mdl-cell mdl-cell--4-col">
             <div className="mdl-card mdl-shadow--2dp">
-              <div className="mdl-card__title">
-                <h2 className="mdl-card__title-text">Welcome</h2>
+              <div className="mdl-card__title" style={{ backgroundImage: `url(assets/${require('assets/images/techcamp_topic_3.png')})`}}>
               </div>
               <div className="mdl-card__supporting-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Mauris sagittis pellentesque lacus eleifend lacinia...
-              </div>
-              <div className="mdl-card__actions mdl-card--border">
-                <a className="mdl-button mdl-js-button mdl-js-ripple-effect">
-                  Get Started
-                </a>
+                Sản xuất ra năng lượng sạch từ năng lượng dư thừa xung quanh chúng ta bằng vật liệu nhiệt điện.
+                <hr/>
+                Trần Quang Khôi
               </div>
             </div>
           </div>              
